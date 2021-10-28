@@ -1,7 +1,6 @@
 import React from 'react';
 import Auth from '../../utils/auth';
 import { Link } from 'react-router-dom';
-// import Profile from '../../pages/Profile';
 
 const Header = () => {
   const logout = event => {
@@ -19,7 +18,7 @@ const Header = () => {
         <nav className="text-center">
           {Auth.loggedIn() ? (
             <>
-              <Link to="/profile">My Profile</Link>
+              <Link to="/profile">Me</Link>
               <a href="/" onClick={logout}>
                 Logout
               </a>
